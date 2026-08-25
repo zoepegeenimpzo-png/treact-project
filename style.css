@@ -8,6 +8,98 @@
   color: #243e63;
 }
 
+.nav__link {
+  margin-left: 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #7342d6;
+  font-weight: bold;
+  padding: 8px;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+}
+
+.nav__link--primary {
+  border:2px solid #7342d6;
+  border-radius: 4px;
+}
+
+.nav__link--primary:hover {
+  text-decoration: none;
+}
+
+/* Button MENU
+
+.btn__menu {
+  background-color: transparent;
+  font-size: 40px;
+  border: none;
+  color: #7342d6;
+  display: none;
+  margin-left: auto;
+}
+
+.menu__backdrop {
+  position: absolute;
+  background-color: #242424;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 300ms ease;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(100%);
+}
+
+.menu--open {
+  max-height: 100vh;
+  overflow: hidden;
+  display:flex
+}
+
+.menu--open .menu__backdrop {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(0);
+}
+
+.menu__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu__list {
+  padding: 32px 0;
+}
+
+.menu__link {
+  font-size: 40px;
+  color: white;
+}
+
+.btn__menu--close {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  padding: 8px;
+  color: white;
+
+}
+
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+
 .row {
   width: 100%;
   max-width: 1280px;
@@ -252,6 +344,16 @@ FEATURES SECTION
 
 */
 
+.container {
+  padding: 80px 0;
+}
+
+.row {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .features__row {
   width: 100%;
   max-width: 1200px;
@@ -358,6 +460,8 @@ QUALITY SECTION
 
 .quality__content {
   width: 50%;
+  display: flex;
+  flex-direction: column;
   max-width: 576px;
   margin-right: 64px;
 }
@@ -405,12 +509,13 @@ QUALITY SECTION
 
 .quality__image--wrapper {
   display: flex;
+  flex-direction: column;
   margin: 0 56px;
   width: 50%;
 }
 
 .quality__image {
-  width: 100%;
+  width: 400%;
 }
 
 /*
@@ -418,6 +523,12 @@ QUALITY SECTION
 STEPS SECTION
 
 */
+
+.row {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 #steps .row {
   display: flex;
@@ -679,6 +790,7 @@ PRICING SECTION
 
 .plans {
   display: flex;
+  flex-wrap: wrap;
   position: relative;
   flex-direction: row;
   width: 100%;
@@ -1263,3 +1375,33 @@ footer {
   cursor: pointer;
   transition: all 300ms ease;
 }
+
+
+/*SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+@media (max-width:768px) {
+  .header__description {
+    padding: 0 24px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+h2 {
+    font-size: 26px;
+  }
+  button {
+    font-size: 18px;
+  }
+  .book {
+    width: 50%;
+  }
+
+}
+
+/*SMALL PHONES< LARGE SMARTPHONES */
+
+
+@media (max-width: 640px) {
+    .container {
+        padding: 80px 0px;
+    }
+  }

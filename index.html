@@ -31,6 +31,23 @@
             <a href="#" class="nav__link nav__link--primary"
               ><button class="button">Sign Up</button></a
             >
+            <button class="btn__menu" id="hamburger" onclick=" openMenu()">
+  <i class="fa-solid fa-bars"></i>
+</button>
+  <div class="menu__backdrop">
+    <button class="btn__menu--close" onclick=" closeMenu()">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <ul class="menu__links">
+      <li class="menu__list">
+        <a href="#" class="menu__link"onclick=" closeMenu()">Home</a>
+      </li>
+      <li class="menu__list"><a href="#features" class="menu__link" onclick=" closeMenu()">Books</a>
+      </li>
+      <li class="menu__list">
+        <a class="menu__link no-cursor">Contact</a>
+      </li>
+    </ul>
           </div>
         </div>
       </nav>
@@ -562,7 +579,7 @@
             </div>
           </section>
 
-          <footer>
+          <!-- <footer>
             <svg viewBox="0 0 600 600" class="footer__blob--2">
               <g transform="translate(300,300)">
                 <path
@@ -598,6 +615,60 @@
           </footer>
         </section>
       </div>
-    </section>
+    </section>  -->
+
+<footer>
+  <svg viewBox="0 0 600 600" class="footer__blob--2">
+              <g transform="translate(300,300)">
+                <path
+                  d="M153.6,-239C199.1,-209.8,236,-167.2,258.4,-118C280.9,-68.9,288.9,-13.1,281.2,40.4C273.5,93.9,250.1,145.2,214.7,186.1C179.3,226.9,131.9,257.4,80,272.6C28.2,287.8,-28.2,287.8,-80,272.6C-131.9,257.4,-179.3,226.9,-214.7,186.1C-250.1,145.2,-273.5,93.9,-281.2,40.4C-288.9,-13.1,-280.9,-68.9,-258.4,-118C-236,-167.2,-199.1,-209.8,-153.6,-239C-108.1,-268.3,-54.1,-284.1,0,-284.1C54.1,-284.1,108.1,-268.3,153.6,-239Z"
+                  fill="rgb(80,17,204)"
+                ></path>
+              </g>
+            </svg>
+  <div class="container">
+    <div class="row row__column">
+      <a href="#"
+      <figure class="footer__logo">
+        <img
+                    src="./assets/footer-logo-light.d9a5d1b5be5ea077b26864fdfc2e96a4.svg"
+                    alt="footer logo"
+                    class="footer__logo--img"
+                  />
+      </figure>
+       <h5 class="footer__logo--text">Treact Inc.</h5>
+    </div>
+  </div>
+   <div class="footer__copyright">
+                  © 2018 Treact Inc. All Rights Reserved.
+                </div>
+                <div class="footer__socials">
+                  <div class="footer__socials--link">
+                    <a class="facebook"
+                      ><i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a class="twitter"><i class="fa-brands fa-twitter"></i> </a>
+                    <a class="youtube"><i class="fa-brands fa-youtube"></i> </a>
+                  </div>
+                </div>
+</a>
+<div class="footer__list">
+<a href="" class="footer__link">Home</a>
+<a href="" class="footer__link no-cursor">About</a>
+<a href="" class="footer__link">Books</a>
+<a href="" class="footer__link no-cursor">Contact</a>
+</div>
+<div class="footer__copyright">Copyright &copy; 2021 Library </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
   </body>
 </html>
