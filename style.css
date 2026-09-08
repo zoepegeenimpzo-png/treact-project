@@ -31,6 +31,7 @@
 }
 
 /* Button MENU
+*/
 
 .btn__menu {
   background-color: transparent;
@@ -42,7 +43,7 @@
 }
 
 .menu__backdrop {
-  position: absolute;
+  position: fixed;
   background-color: #242424;
   top: 0;
   left: 0;
@@ -61,7 +62,6 @@
 .menu--open {
   max-height: 100vh;
   overflow: hidden;
-  display:flex
 }
 
 .menu--open .menu__backdrop {
@@ -94,7 +94,7 @@
 
 }
 
-*/
+
 
 html {
   scroll-behavior: smooth;
