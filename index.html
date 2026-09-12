@@ -29,8 +29,8 @@
             <a href="#" class="nav__link">Contact Us</a>
             <a href="#" class="nav__link login">Login</a>
             <a href="#" class="nav__link nav__link--primary"
-              ><button class="button">Sign Up</button></a
-            >
+              <span style="color: white;">Sign Up</span>
+              </a>
             <button class="btn__menu" id="hamburger" onclick=" openMenu()">
   <i class="fa-solid fa-bars"></i>
 </button>
@@ -38,16 +38,20 @@
     <button class="btn__menu--close" onclick=" closeMenu()">
       <i class="fa-solid fa-xmark"></i>
     </button>
-    <ul class="menu__links">
-      <li class="menu__list">
-        <a href="#" class="menu__link"onclick=" closeMenu()">Home</a>
-      </li>
-      <li class="menu__list"><a href="#features" class="menu__link" onclick=" closeMenu()">Books</a>
-      </li>
-      <li class="menu__list">
-        <a class="menu__link no-cursor">Contact</a>
-      </li>
-    </ul>
+    <div class="menu__links">
+        <a href="#about" class="menu__link"onclick=" closeMenu()">About</a>
+
+      <a href="#blog" class="menu__link" onclick=" closeMenu()">Blog</a>
+     
+        <a href="#pricing" class="menu__link" onclick=" closeMenu()">Pricing</a>
+      
+       <a href="#contactus" class="menu__link" onclick=" closeMenu()">Contact Us</a>
+     
+       <a href="#login" class="menu__link" onclick=" closeMenu()">Login</a>
+     
+      <a href="#signup" class="menu__link menu__link--primary" onclick=" closeMenu()"><span style="color: white;">Sign Up</span></a>
+     
+    </div>
           </div>
         </div>
       </nav>
@@ -594,6 +598,16 @@
                 ></path>
               </g>
             </svg>
+
+            <svg viewBox="0 0 600 600" class="footer__blob--3">
+              <g transform="translate(300,300)">
+                <path
+                  d="M153.6,-239C199.1,-209.8,236,-167.2,258.4,-118C280.9,-68.9,288.9,-13.1,281.2,40.4C273.5,93.9,250.1,145.2,214.7,186.1C179.3,226.9,131.9,257.4,80,272.6C28.2,287.8,-28.2,287.8,-80,272.6C-131.9,257.4,-179.3,226.9,-214.7,186.1C-250.1,145.2,-273.5,93.9,-281.2,40.4C-288.9,-13.1,-280.9,-68.9,-258.4,-118C-236,-167.2,-199.1,-209.8,-153.6,-239C-108.1,-268.3,-54.1,-284.1,0,-284.1C54.1,-284.1,108.1,-268.3,153.6,-239Z"
+                  fill="rgb(80,17,204)"
+                ></path>
+              </g>
+            </svg>
+            
   <div class="container">
     <div class="row row__column">
       <a href="#">
@@ -603,8 +617,9 @@
                     alt="footer logo"
                     class="footer__logo--img"
                   />
+                  <h5 class="footer__logo--text">Treact Inc.</h5>
       </figure>
-       <h5 class="footer__logo--text">Treact Inc.</h5>
+      </a>
     </div>
   </div>
    <div class="footer__copyright">
@@ -617,14 +632,6 @@
                     </a>
                     <a class="twitter"><i class="fa-brands fa-twitter"></i> </a>
                     <a class="youtube"><i class="fa-brands fa-youtube"></i> </a>
-                  
-<div class="footer__list">
-<a href="" class="footer__link">Home</a>
-<a href="" class="footer__link no-cursor">About</a>
-<a href="" class="footer__link">Blog</a>
-<a href="" class="footer__link">Pricing</a>
-<a href="" class="footer__link no-cursor">Contact US</a>
-</div>
     </div>
   </div>
 </footer>
