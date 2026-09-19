@@ -1399,6 +1399,8 @@ footer {
   position: relative;
   cursor: pointer;
   display: inline-block;
+  padding: 0;
+  margin-bottom: 10px;
 }
 
 .footer__column--link:nth-child(2) {
